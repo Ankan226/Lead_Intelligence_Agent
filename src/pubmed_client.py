@@ -1,7 +1,7 @@
 from Bio import Entrez
 import pandas as pd
 
-Entrez.email = "ankanpal255@gmail.com"   # USE YOUR REAL EMAIL
+Entrez.email = "ankanpal255@gmail.com"  
 
 def fetch_pubmed_leads(query, max_results=25):
     handle = Entrez.esearch(
@@ -59,3 +59,4 @@ def fetch_pubmed_leads(query, max_results=25):
             })
 
     return pd.DataFrame(leads)
+
