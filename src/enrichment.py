@@ -9,7 +9,6 @@ def enrich_lead(row):
     else:
         company_type = "Research Organization"
 
-    # Location inference
     person_location = "Unknown"
     for city in ["boston", "cambridge", "basel", "london", "san francisco"]:
         if city in affiliation:
@@ -18,7 +17,6 @@ def enrich_lead(row):
 
     company_hq = person_location
 
-    # Email heuristic (explicitly a demo assumption)
     email = None
     if company_type != "Academic":
         parts = row["name"].split()
@@ -31,3 +29,4 @@ def enrich_lead(row):
         "company_hq": company_hq,
         "email": email
     }
+
