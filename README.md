@@ -11,6 +11,10 @@ Notes:
   and decision-making alignment with business development workflows.
 
 This prototype implements:
-✔ Identification
-✔ Enrichment
-✔ Probability Ranking
+ Identification
+ Enrichment
+ Probability Ranking
+
+
+##RUN:-
+streamlit run app.py
