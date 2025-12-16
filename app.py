@@ -6,7 +6,6 @@ from src.pubmed_client import fetch_pubmed_leads
 from src.enrichment import enrich_lead
 from src.scoring import score_lead
 
-# ✅ AUTO-CREATE OUTPUT FOLDER
 os.makedirs("output", exist_ok=True)
 
 st.set_page_config(page_title="Lead Intelligence Agent", layout="wide")
@@ -70,3 +69,4 @@ if st.button("Generate & Rank Leads"):
                 file_name="ranked_leads.csv",
                 mime="text/csv"
             )
+
